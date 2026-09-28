@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    <title>Machine Comics</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <div id="header">
+      <span id="title">Machine Comics</span>
+      
+      <span id="author">by <a href="https://ronikaufman.github.io">Roni Kaufman</a></span>
+    </div>
+    <div id="page-content">
+      <button id="left-arrow" aria-label="Previous page"><</button>
+      <div id="page-container">
+        <div id="page">
+          <img id="comic-page" src="/images/257000000.png" alt="Machine Comics page">
+        </div>
+      </div>
+      <button id="right-arrow" aria-label="Next page">></button>
+    </div>
+    <div id="gallery-grid" style="display: none;"></div>
+    <div id="about-text" style="display: none;">
+      <p>Zoom in, zoom out.</p>
+      <p>Machine Comics is an experiment in generative storytelling, an abstract graphic novel drawn by an algorithm. Paying homage to pop art and classic comic book aesthetics, saturated colors and halftone dots create unexpected patterns and vibrant textures in each unique page.</p>
+      <p>The project was originally sold on Art Blocks in 2022. Its code was written in p5.js.</p>
+    </div>
+    <div id="footer">
+      <a id="gallery-view" href="#">Gallery view</a>
+      <span id="number">#0</span>
+      <a href="#" id="about">About</a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
