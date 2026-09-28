@@ -48,11 +48,6 @@ function updatePage() {
 }
 
 function populateGrid() {
-  const COMIC_PAGES = Array.from(
-    { length: 96 },
-    (_, i) => `/images/2570000${i.toString().padStart(2, "0")}.png`,
-  );
-
   const galleryGrid = document.getElementById("gallery-grid");
 
   COMIC_PAGES.forEach((page, index) => {
