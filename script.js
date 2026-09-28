@@ -1,6 +1,6 @@
 const COMIC_PAGES = Array.from(
   { length: 96 },
-  (_, i) => `/images/2570000${i.toString().padStart(2, "0")}.png`,
+  (_, i) => `./images/2570000${i.toString().padStart(2, "0")}.png`,
 );
 
 let comicPageEl,
@@ -40,7 +40,7 @@ function init() {
 
 function updatePage() {
   comicPageEl.src = COMIC_PAGES[currentPageIndex];
-  comicPageEl.alt = `Comic page ${currentPageIndex + 1}`;
+  comicPageEl.alt = `Machine Comics #${index}`;
   pageNumberEl.textContent = `#${currentPageIndex}`;
 
   leftArrow.disabled = currentPageIndex === 0;
@@ -58,7 +58,7 @@ function populateGrid() {
   COMIC_PAGES.forEach((page, index) => {
     const img = document.createElement("img");
     img.src = page;
-    img.alt = `Machine Comics #${index + 1}`;
+    img.alt = `Machine Comics #${index}`;
     img.loading = "lazy";
 
     const galleryItem = document.createElement("a");
