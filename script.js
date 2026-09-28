@@ -40,7 +40,7 @@ function init() {
 
 function updatePage() {
   comicPageEl.src = COMIC_PAGES[currentPageIndex];
-  comicPageEl.alt = `Machine Comics #${index}`;
+  comicPageEl.alt = `Machine Comics #${currentPageIndex}`;
   pageNumberEl.textContent = `#${currentPageIndex}`;
 
   leftArrow.disabled = currentPageIndex === 0;
